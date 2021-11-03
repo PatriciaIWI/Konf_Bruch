@@ -44,14 +44,13 @@ else {return 0;
         *   => Selbige auch für denominator
         *  Retournieren Sie ihre neue Bruch-Variable
         * */
-b2.getNumerator();
-b2.getDenominator();
-
-        return null;
+        Bruch neuerBruch = new Bruch(this.numerator * b2.getNumerator(), this.denominator * b2.getDenominator());
+return neuerBruch;
     }
 
     public Bruch multiplicate(Bruch b2, Bruch b3) {
         // TODO: Multiplizieren Sie den eigenen Bruch mit b2 und b3
-        return null;
+       Bruch neuerBruch = new Bruch(this.numerator * b2.getNumerator() * b3.getNumerator(), this.denominator * b2.getDenominator()*b3.getDenominator());
+        return neuerBruch;
     }
 }
